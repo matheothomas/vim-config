@@ -4,7 +4,7 @@ This is my personal vim configuration, as a computer science student.
 
 ## Content
 - A vimrc file
-- An executable which :
+- A bash script which :
     - creates the arborescence
     - creates the .vimrc file
     - creates the templates files
@@ -23,3 +23,6 @@ This is my personal vim configuration, as a computer science student.
 
 ## Requirements
 Make sure that **git** and **curl** are installed.
+
+## Issues
+There may be errors when first opening vim due to the importation of plugins, but should not happen afterwards.
