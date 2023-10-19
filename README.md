@@ -21,6 +21,9 @@ This is my personal vim configuration, as a computer science student.
 ## Themes
 - I use the [vim-colors-xcode](https://github.com/lunacookies/vim-colors-xcode) theme.
 
+# Installation 
+Execute the bash script.
+
 ## Requirements
 Make sure that **git** and **curl** are installed.
 
