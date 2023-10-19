@@ -3,8 +3,8 @@
 This is my personal vim configuration, as a computer science student.
 
 ## Content
-- .vimrc file
-- an executable which :
+- A vimrc file
+- An executable which :
     - creates the arborescence
     - creates the .vimrc file
     - creates the templates files
@@ -13,13 +13,13 @@ This is my personal vim configuration, as a computer science student.
     - installs the plugins (see list below)
 
 ## Plugins
-- NERDTree : displays the current arborescence and allows to navigate it.
-- airline (and themes) : displays a status bar at the bottom of the buffer.
-- auto-pairs : automatically creates/deletes matching (, {, [, "...
-- vim-rainbow : changes the colors of matching parentheses, only turned on for .scm files.
+- [NERDTree](https://github.com/preservim/nerdtree) : displays the current arborescence and allows to navigate it.
+- [airline](https://github.com/vim-airline/vim-airline) (and themes) : displays a status bar at the bottom of the buffer.
+- [auto-pairs](https://github.com/jiangmiao/auto-pairs) : automatically creates/deletes matching (, {, [, "...
+- [vim-rainbow](https://github.com/frazrepo/vim-rainbow) : changes the colors of matching parentheses, only turned on for .scm files.
 
 ## Themes
-- I use the vim-colors-xcode theme.
+- I use the [vim-colors-xcode](https://github.com/lunacookies/vim-colors-xcode) theme.
 
 ## Requirements
-Make sur that **git** and **curl** are installed.
+Make sure that **git** and **curl** are installed.
