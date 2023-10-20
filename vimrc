@@ -1,5 +1,6 @@
 " matheo thomas vim configuration.
 
+" Use 'z+o' and 'z+c' to open/close the folding paragraphs
 
 " Color scheme configuration {{{
 " https://github.com/lunacookies/vim-colors-xcode
@@ -105,10 +106,13 @@ map <C-l> <C-w>l
 
 " Templates {{{
 
+let authorName = " "
 " Dynamically write file name and date.
 fun WriteHeader()
 	exe "1," . 5 . "g/name : /s/name : .*/name : " .
 				\ expand('%')
+	exe "1," . 5 . "g/author : /s/author : .*/author : " .
+				\ g:authorName
 	exe "1," . 5 . "g/date : /s/date : .*/date : " .
 				\ strftime("%d-%m-%y")
 endfun
