@@ -43,6 +43,8 @@ Execute the bash script :
 ./vim_configurator.sh
 ```
 
+Enter your name at line 108 of the .vimrc if you want the templates to be auto-filled.
+
 ## Requirements
 Make sure that **git** and **curl** are installed.
 
