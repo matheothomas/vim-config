@@ -7,7 +7,7 @@ mkdir ~/.vim
 
 # Move the templates and to the right place.
 mkdir ~/.vim/templates
-cp templates/templates.* ~/.vim/templates/
+cp templates/template.* ~/.vim/templates/
 
 # clone the vim theme.
 cd ~/
