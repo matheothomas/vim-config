@@ -48,5 +48,9 @@ Enter your name at line 108 of the .vimrc if you want the templates to be auto-f
 ## Requirements
 Make sure that **git** and **curl** are installed.
 
+## Uninstall
+Execute the `remove-config.sh` script to uninstall the configuration. 
+(/!\ If you had previously installed plugins, they will be deleted for the moment.)
+
 ## Issues
 There may be errors when first opening vim due to the importation of plugins, but should only happen once.
