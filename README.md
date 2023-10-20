@@ -47,4 +47,4 @@ Execute the bash script :
 Make sure that **git** and **curl** are installed.
 
 ## Issues
-There may be errors when first opening vim due to the importation of plugins, but should not happen afterwards.
+There may be errors when first opening vim due to the importation of plugins, but should only happen once.
