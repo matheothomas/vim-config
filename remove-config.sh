@@ -7,3 +7,4 @@ rm -r ~/vim-colors-xcode
 
 rm -r ~/.vim/templates
 
+rm -r ../vim-config
