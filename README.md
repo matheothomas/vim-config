@@ -27,10 +27,17 @@ Import the files with :
 ```bash
 git clone https://github.com/matheothomas/vim-config
 ```
-Then make the `vim_configurator.sh` inside of the `vim-config` folder executable : 
+
+Go in the newly created folder :
+```bash
+cd vim-config
+```
+
+Make the `vim_configurator.sh` inside of the `vim-config` folder executable : 
 ```bash
 chmod 744 vim_configurator.sh
 ```
+
 Execute the bash script :
 ```bash
 ./vim_configurator.sh
