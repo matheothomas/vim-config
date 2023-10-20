@@ -3,10 +3,11 @@
 This is my personal vim configuration, as a computer science student.
 
 ## Content
-- A vimrc file
-- A bash script which :
+- A vimrc file.
+- A folder containing file templates.
+- A bash script which creates, moves and installs all the necessary files :
     - creates the arborescence
-    - creates the .vimrc file
+    - moves the .vimrc file
     - creates the templates files
     - installs the theme
     - installs the plugin manager (Plug)
@@ -22,7 +23,18 @@ This is my personal vim configuration, as a computer science student.
 - I use the [vim-colors-xcode](https://github.com/lunacookies/vim-colors-xcode) theme.
 
 # Installation 
-Execute the bash script.
+Import the files with :
+```bash
+git clone https://github.com/matheothomas/vim-config
+```
+Then make the `vim_configurator.sh` inside of the `vim-config` folder executable : 
+```bash
+chmod 744 vim_configurator.sh
+```
+Execute the bash script :
+```bash
+./vim_configurator.sh
+```
 
 ## Requirements
 Make sure that **git** and **curl** are installed.
