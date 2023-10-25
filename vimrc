@@ -89,10 +89,10 @@ set laststatus=2
 " Remapping {{{
 
 " Reprogram window switching
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+"map <C-h> <C-w>h
+"map <C-j> <C-w>j
+"map <C-k> <C-w>k
+"map <C-l> <C-w>l
 
 " Autocomplete (, ', ", [, { (disabled : replaced by plugin)
 ""ino " ""<left>
@@ -156,6 +156,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'frazrepo/vim-rainbow'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 " }}}
