@@ -33,9 +33,9 @@ Go in the newly created folder :
 cd vim-config
 ```
 
-Make the `vim_configurator.sh` inside of the `vim-config` folder executable : 
+Make the `vim_configurator.sh` and `remove-config.sh` inside of the `vim-config` folder executable : 
 ```bash
-chmod 744 vim_configurator.sh
+chmod 744 vim_configurator.sh remove-config.sh
 ```
 
 Execute the bash script :
@@ -50,7 +50,6 @@ Make sure that **git** and **curl** are installed.
 
 ## Uninstall
 Execute the `remove-config.sh` script to uninstall the configuration. 
-(/!\ If you had previously installed plugins, they will be deleted for the moment.)
 
 ## Issues
 There may be errors when first opening vim due to the importation of plugins, but should only happen once.

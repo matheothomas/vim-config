@@ -1,7 +1,6 @@
 " matheo thomas vim configuration.
 
 " Use 'z+o' and 'z+c' to open/close the folding paragraphs
-
 " Color scheme configuration {{{
 " https://github.com/lunacookies/vim-colors-xcode
 " git clone https://github.com/arzg/vim-colors-xcode.git
@@ -106,7 +105,7 @@ set laststatus=2
 
 " Templates {{{
 
-let authorName = " "
+let authorName = "matheo thomas"
 " Dynamically write file name and date.
 fun WriteHeader()
 	exe "1," . 5 . "g/name : /s/name : .*/name : " .
@@ -115,6 +114,10 @@ fun WriteHeader()
 				\ g:authorName
 	exe "1," . 5 . "g/date : /s/date : .*/date : " .
 				\ strftime("%d-%m-%y")
+	if expand('%') =~ ".*.h"
+		exe "1," . 10 . "g/ _h/s/ / " .
+					\ expand('%:r')
+	endif
 endfun
 
 " Use template corresponding to file type.
@@ -123,6 +126,7 @@ if has("autocmd")
 		autocmd BufNewFile *.c ks|0r ~/.vim/templates/template.c|call WriteHeader()|'s
 		autocmd BufNewFile *.h ks|0r ~/.vim/templates/template.h|call WriteHeader()|'s
 		autocmd BufNewFile *.scm ks|0r ~/.vim/templates/template.scm|call WriteHeader()|'s
+		autocmd BufNewFile Makefile ks|0r ~/.vim/templates/template_Makefile|'s
 	augroup END
 endif
 
@@ -165,7 +169,7 @@ call plug#end()
 " Plugins settings {{{
 
 " Start NERDTree and put the cursor back in the other window.
-autocmd VimEnter * NERDTree | wincmd p
+"autocmd VimEnter * NERDTree | wincmd p
 
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
