@@ -3,8 +3,10 @@
 # Renames the .vimrc.
 mv vimrc .vimrc
 
-# Keeps the old configuration.
-mv ~/.vimrc ~/.vimrc_old
+# Saves the old configuration.
+mkdir old-config
+mv ~/.vimrc old-config
+mv ~/.vim old-config
 
 # Moves the new .vimrc.
 cp .vimrc ~/

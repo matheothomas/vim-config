@@ -1,10 +1,12 @@
 #!/bin/bash
 
+# removes the new .vimrc, the custom templates and the theme.
 rm ~/.vimrc
-mv ~/.vimrc_old ~/.vimrc
-
+rm -r ~/.vim/templates/template.*
 rm -r ~/vim-colors-xcode
 
-rm -r ~/.vim/templates
+# Puts back the saved configuration.
+mv old-config/* ~/
 
+# removes the installation files etc.
 rm -r ../vim-config
