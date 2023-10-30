@@ -5,8 +5,10 @@ mv vimrc .vimrc
 
 # Saves the old configuration (if there wasn't, redirects the errors in logs.txt)
 mkdir old-config
-mv ~/.vimrc old-config && echo .vimrc > files.txt 
-mv ~/.vim old-config && echo .vim > files.txt
+mv ~/.vimrc old-config || echo 'No old .vimrc found.\n'
+	#echo .vimrc > files.txt 
+mv ~/.vim old-config || echo 'No old .vim found.\n'
+	#echo .vim > files.txt
 
 # Moves the new .vimrc.
 cp .vimrc ~/
