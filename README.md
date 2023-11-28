@@ -22,6 +22,9 @@ This is my personal vim configuration, as a computer science student.
 ## Themes
 - I use the [vim-colors-xcode](https://github.com/lunacookies/vim-colors-xcode) theme.
 
+## Requirements
+Make sure that **git** and **curl** are installed.
+
 # Installation 
 Import the files with :
 ```bash
@@ -33,23 +36,31 @@ Go in the newly created folder :
 cd vim-config
 ```
 
-Make the `vim_configurator.sh` and `remove-config.sh` inside of the `vim-config` folder executable : 
+Make the `vim-config.sh`, `remove-config.sh` and `coc-config.sh` inside of the `vim-config` folder executable : 
 ```bash
-chmod 744 vim_configurator.sh remove-config.sh
+chmod 744 vim-config.sh remove-config.sh coc-config.sh
 ```
 
 Execute the bash script :
 ```bash
-./vim_configurator.sh
+./vim-config.sh
 ```
 
 Enter your name at line 108 of the .vimrc if you want the templates to be auto-filled.
 
-## Requirements
-Make sure that **git** and **curl** are installed.
+## Code completion
+Configuration of the Conquer of Completion plugin (instructions tested on MacOS) :
+
+- Execute the `coc-config.sh` script
+```bash
+./coc-config.sh
+```
+
+- Open vim and type :
+```vim
+:CocInstall coc-clangd
+```
 
 ## Uninstall
 Execute the `remove-config.sh` script to uninstall the configuration. 
 
-## Issues
-There may be errors when first opening vim due to the importation of plugins, but should only happen once.
